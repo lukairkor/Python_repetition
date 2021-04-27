@@ -4,7 +4,7 @@ import urllib.request
 from bs4 import BeautifulSoup
 import ssl
 import re
-mport pandas as pd
+import pandas as pd
 # Ignore SSL certificate errors
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
