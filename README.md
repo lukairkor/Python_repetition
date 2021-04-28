@@ -6,3 +6,5 @@
 # Python-for-Everybody_mycode
 Kurs
 >>>>>>> master-holder
+>>>>>>> 
+merged
