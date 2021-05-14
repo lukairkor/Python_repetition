@@ -1,6 +1,6 @@
 # a = input("Enter file:")
 # if len(a) < 1 : a = "mbox-short.txt"
-a = ('E:/Edukacja/Programowanie/Python/Python_Projekty/py4e/9.4/mbox-short.txt')
+a = ('mbox-short.txt')
 fhandle = open(a)
 counts = dict()
 for line in fhandle:

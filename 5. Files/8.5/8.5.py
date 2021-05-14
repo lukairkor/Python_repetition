@@ -1,8 +1,8 @@
 # fname = input("Enter file name: ")
-adres = "E:/Edukacja/Programowanie/GIT/Python-for-Everybody/8. Lists/8.5/mbox-short.txt"
+adres = "mbox-short.txt"
 
 
-fname = input("Enter file name: ")
+fname = input(adres)
 counter = 0
 fh = open(adres)
 

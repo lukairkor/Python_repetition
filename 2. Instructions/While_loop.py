@@ -1,5 +1,13 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri May 14 00:20:13 2021
+-
+@author: lukas
+"""
 lista = []
 
+#
 def biggest(l):
     largest = None
     for n in l:
@@ -7,9 +15,9 @@ def biggest(l):
         if largest is None or n > largest:
             largest = n
     return largest
-    
-    
-
+ 
+   
+#
 def notbiggest(l):
     smallest = None
     for n in l:
@@ -17,8 +25,9 @@ def notbiggest(l):
         if smallest is None or n < smallest:
             smallest = n
     return smallest
-   
 
+    
+#
 while True:
     wpis = input("Enter a number: ")
     if wpis == 'done' : 

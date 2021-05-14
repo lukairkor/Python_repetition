@@ -12,21 +12,27 @@ text = """Alice was beginning to get very tired of sitting by
     (as well as she could, for the hot day made her feel very sleepy and stupid),
     whether the pleasure"""
 
-#functions
-# find all matches
+## find all matches
 x = re.findall("was", text)
 print(x,"\n")
 
 #return match obiect, only first found
 x = re.search("was", text)
-# x = x.group() #start end position
+print(x,"\n")
 x = x.group() #return part of str with match
 print(x,"\n")
 
-# # split at each white space character
-# x = re.split("\s", text)
-# print(x,"\n")
+## split at each white space character
+x = re.split("\s", text)
+print(x,"\n")
 
-# # replece the matches
-# x = re.sub("\s", "X", text)
-# print(x,"\n")
+## replece the matches
+x = re.sub("\s", "X", text)
+print(x,"\n")
+
+##
+tekst = 'We just received $10.00 for cookies.'
+sciezka = r'[0-9a-zA-Z.].+'
+dopasowanie = re.findall(sciezka, tekst)
+
+print(dopasowanie)
