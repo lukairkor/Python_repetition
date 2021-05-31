@@ -29,3 +29,17 @@ lista_2 = ["Ala", "Ola", "Kasia", "Basia"]
 
 for x, y in zip(lista_1, lista_2):
     print(x, y)
+    
+    
+###############
+# tuplee = (1, 2, 3)
+# lista = list(tuplee)
+# print(type(lista))
+
+lista1 = ['a', 'b', 'c']
+lista2 = [1, 2, 3]
+
+a = zip(lista1, lista2)
+# print(list(a))
+# print(dict(a))
+# print(tuple(a))
