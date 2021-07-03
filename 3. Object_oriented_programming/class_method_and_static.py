@@ -42,13 +42,23 @@ class Glider(Aircraft):
 class jet_aircraft(Aircraft):
     __amount_of_engines = 2
     
+    def __init__(self, manufac):
+        self.manufac = manufac
+    
     def describe_engin(self):
         super().describe_engin(self.__amount_of_engines)
-        
-        
-                
     
-glider = Glider("by plane")
+    # usuful method in class, that we can call
+    @classmethod
+    def new_jet(cls, manufac):
+        return cls(manufac) # send to init
+        
+    @staticmethod
+    def wing_type(arg):
+        print("Jet wings type is " + arg)
+            
+    
+glider = Glider("by plane") # creat object from class Glider
 glider.engin_type = None 
 glider.engin_power = 0
 glider.type_name = "glider"
@@ -56,23 +66,25 @@ glider.model_name = "Puchacz"
 glider.describe_engin_glider()
 glider.name_of_aircraft()
 
+print("----------------")
+# we can invoke method without creating object
+jet1 = jet_aircraft.new_jet("General Dynamics")
+jet1.engin_type = "jet engin"
+jet1.engin_power = 1500
+jet1.describe_engin()
 
-jet = jet_aircraft("jet_aircraft", "F16")
-jet.engin_type = "jet engin"
-jet.engin_power = 1000
-jet.describe_engin()
-# del glider
-print("end")
+print("----------------")
+# we can create object from object
+jet2 = jet1.new_jet("SAAB")
+jet2.engin_type = "jet engin"
+jet2.engin_power = 1000
+jet2.describe_engin()
+jet2.wing_type("Delta")
+print("----------------")
+# we dont need object just class for static method
+jet2.wing_type("Eliptical")
 
 # output
-# =============================================================================
-# Have no engin
-# Engine type is  None  and its power is equal to 0
-# Aircraft name is  glider and model name is  Puchacz
-# Engine type is  jet engin  and its power is equal to 2400
-# end
-# delete glider object
-# =============================================================================
 
     
 

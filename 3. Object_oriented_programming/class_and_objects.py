@@ -47,7 +47,14 @@ glider.name_of_aircraft()
 # del glider
 print("end")
 
-
+# output
+# =============================================================================
+# Have no engin
+# Engine type is  None  and its power is equal to 0
+# Aircraft name is  glider and model name is  Puchacz
+# end
+# delete glider object
+# =============================================================================
 
 
 
