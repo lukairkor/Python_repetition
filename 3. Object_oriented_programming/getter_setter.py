@@ -36,4 +36,10 @@ obj.show_amount = 5
 # show value
 print(obj.show_amount)
 
-# print(obj.add_fruit())
+# =============================================================================
+# output
+# 
+# I have 5 fruits
+# Adding some fruits to our basket ..
+# I have 10 fruits
+# =============================================================================
