@@ -1,4 +1,4 @@
-text = "X-DSPAM-Confidence:    0.8475"
+text = "DD kdsreS:    0.3423"
 colon = text.find(':')
 liczba = text[colon + 1:]
 liczba1 = liczba.strip()

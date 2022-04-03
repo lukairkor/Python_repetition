@@ -9,6 +9,7 @@ Created on Fri Apr  1 22:56:47 2022
 -not any cyccle
 -decision tree
 -binary tree has only two node in each child branche
+- bottom of tree are caled leaves
 from: www.section.io/engineering-education/binary-tree-data-structure-python/
 @author: lukas
 """
