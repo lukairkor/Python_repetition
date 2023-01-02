@@ -2,13 +2,13 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sat Apr  2 17:12:23 2022
-
+- floating point number
 @author: lukas
 """
 
-f = 0.4553242
+NUM_F = 0.4553242
 
-print(type(f))
+print(type(NUM_F))
 
-f = round(f, 2)
-print(f)
+NUM_F = round(NUM_F, 2)
+print(NUM_F)

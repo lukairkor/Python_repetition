@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sat Apr  2 17:19:40 2022
-
+- boolean
 @author: lukas
 """
 

@@ -9,6 +9,7 @@ Created on Fri May 14 00:20:13 2021
 @author: lukas
 """
 
+# tuple ecamples
 tuple_1 = (1, 2, 3, 4, 5)
 tuple_2 = (1,)
 
@@ -16,9 +17,13 @@ tuple_2 = (1,)
 names = [
       ("John",),
       ("Alex",),
-      ("Micheal",) , 
+      ("Micheal",),
       ("Mike", "Eve")
 ]
+
+# print all names
 print(names, "\n")
+# print only ("Mike", "Eve")
 print(names[3],"\n")
+# print only Eve
 print(names[3][1],"\n")

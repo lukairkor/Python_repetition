@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sat Apr  2 17:09:21 2022
-
+- complex numbners z = a + bi
 @author: lukas
 """
 
