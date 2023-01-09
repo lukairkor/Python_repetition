@@ -3,11 +3,12 @@
 """
 Created on Fri Apr  1 23:48:53 2022
 - non linear data structure
-- collection of nodes, vertices and edges
+- collection of vertices and edges
 - finding shorting path, networking
 @author: lukas
 """
 
+# define the graph
 graf = {}
 graf["ja"] = ["Michal", "Tomek", "Joannam"]
 graf["Michal"] = ["Jan"]
@@ -21,6 +22,13 @@ graf["Jakub"] = []
 print(graf,"\n")
 
 #display graph vertices
-print(graf.keys())
+print(graf.keys(), "\n")
 
-#display graph edges
+# display graph edges
+def edges(graf):
+    for node in graf:
+        for neighbor in graf[node]:
+            print(f"({node}, {neighbor})")
+
+# print the edges
+edges(graf)

@@ -2,7 +2,10 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Apr  1 22:20:09 2022
-
+- first node of list is called Head
+- last is caled Tail points to Null
+- nodes contain data and pointer to next or previous node
+- linear data struct
 @author: lukas
 """
 

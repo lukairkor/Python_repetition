@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Apr  1 22:34:15 2022
-
+- LIFO
+- push(), pop(), peek(), isEmpty(), isFull(), size()
 @author: lukas
 """
 

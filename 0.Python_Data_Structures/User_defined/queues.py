@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Apr  1 22:30:52 2022
-FIFO
+- FIFO
+- enqueue(), dequeue(), front(), rear(), empty()
 @author: lukas
 """
 
@@ -18,4 +19,3 @@ print(queue,"\n")
 queue.popleft()
 queue.popleft()
 print(queue)
-
