@@ -4,27 +4,29 @@
 -they reduce necessary amount of memory
 """
 
-#example 1:###################################
 
-# def generator():
-#     for i in range(4):
-#         yield i
-
-# gen = generator()
-
-# #example one: next()
-# print(next(gen))
-# print(next(gen))
-# print(next(gen))
-# print(next(gen))
-
-#example 2:###################################
-
-
-def generator(n):
-    for i in range(n):
+def generator_1():
+    """generating"""
+    for i in range(4):
         yield i
 
 
-for i in generator(44):
-    print(i)
+gen = generator_1()
+
+#example one: next()
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+
+print("\n")
+
+
+def generator_2(num):
+    """generating"""
+    for i in range(num):
+        yield i
+
+
+for j in generator_2(10):
+    print(j)
