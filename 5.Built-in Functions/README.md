@@ -15,5 +15,5 @@
 14. enumerate(): returns an enumerate object, containing the index and value of elements in a sequence.  
 15. zip(): returns an iterator of tuples, where the first item in each passed iterator is paired together.  
 16. map(): applies a function to all items in an input list.  
-17.filter(): returns an iterator from elements of an iterable for which a function returns true.  
+17. filter(): returns an iterator from elements of an iterable for which a function returns true.  
 18. format(): formats specified values into a string.
