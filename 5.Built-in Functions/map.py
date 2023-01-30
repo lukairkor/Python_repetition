@@ -7,8 +7,10 @@ do not store all values at once
 """
 liczby = [1, 2, 3, 4, 5]
 
+
 def suma(skladnik):
     return skladnik + skladnik
+
 
 wynik1 = map(suma, liczby)
 # convert to other colection

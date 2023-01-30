@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
--allow us to combine 2 lists
--improves readability of for loops
+- allow us to combine 2 lists
+- improves readability of for loops
 """
 
 list_1 = ["a", "b", "c", "d", "e"]
@@ -14,7 +14,7 @@ x = zip(list_1, list_2, list_3)
 
 # for i, j, k in x:
 #     print(i, j, k)
-    
+
 ##########unzip
 print(x)
 unziped_object = zip(*x)
@@ -29,8 +29,8 @@ lista_2 = ["Ala", "Ola", "Kasia", "Basia"]
 
 for x, y in zip(lista_1, lista_2):
     print(x, y)
-    
-    
+
+
 ###############
 # tuplee = (1, 2, 3)
 # lista = list(tuplee)

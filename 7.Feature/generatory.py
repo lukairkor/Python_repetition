@@ -5,11 +5,11 @@
 """
 
 #example 1:###################################
-             
+
 # def generator():
 #     for i in range(4):
 #         yield i
-        
+
 # gen = generator()
 
 # #example one: next()
@@ -19,10 +19,12 @@
 # print(next(gen))
 
 #example 2:###################################
-    
+
+
 def generator(n):
     for i in range(n):
-        yield i    
+        yield i
+
 
 for i in generator(44):
     print(i)

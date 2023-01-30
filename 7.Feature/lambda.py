@@ -2,7 +2,7 @@
 """
 - when you need function for short peroid of time
 - pass function as a argument
--Np. w metodach map, filter, reduce i innych przyjmujących
+- Np. w metodach map, filter, reduce i innych przyjmujących
 funkcję lub wtedy gdy tą funkcję wykonujemy tylko raz.
 """
 #111###########################
@@ -12,12 +12,19 @@ result = map(lambda number: number ** 2, numbers)
 print(list(result))
 
 #222###########################
+
+
 def function(number):
-    return lambda x : x + number
+    return lambda x: x + number
+
 
 x = function(2)
 print(x(6))
 
 #333###############################
-power = lambda base : lambda exponent: base ** exponent
+
+
+def power(base): return lambda exponent: base ** exponent
+
+
 print(power(3)(2))

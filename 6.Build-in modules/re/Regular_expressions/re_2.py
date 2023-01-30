@@ -14,7 +14,7 @@ lista = list()
 for line in fhandle:
     line = line.rstrip()
     print(line)
-    pattern = re.findall(r'[0-9]+',line)
+    pattern = re.findall(r'[0-9]+', line)
     lista = lista + pattern
 
 print(lista)
@@ -24,6 +24,4 @@ a = ('aktualne.txt')
 fhandle = open(a)
 lista = list()
 
-print(sum(map(int,re.findall('[0-9]+',fhandle.read())))) 
-
-
+print(sum(map(int, re.findall('[0-9]+', fhandle.read()))))

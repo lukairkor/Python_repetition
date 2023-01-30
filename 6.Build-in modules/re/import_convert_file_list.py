@@ -5,13 +5,16 @@ Created on Mon May 24 03:14:30 2021
 
 @author: lukas
 """
-import re 
-lines = []  
-with open('zadanie_B/slo5.in', 'r') as f:
+
+import re
+
+lines = []
+
+with open('data.in', 'r', encoding='UTF-8') as f:
     for line in f:
         line = line.strip()
-        line = re.sub("\s+", ", ", line.strip())
-        line =[int(x) for x in line.split(',')]
+        line = re.sub(r"\s+", ", ", line.strip())
+        line = [int(x) for x in line.split(',')]
         lines.append(line)
 
 

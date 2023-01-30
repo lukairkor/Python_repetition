@@ -8,7 +8,7 @@ Created on Thu Apr 22 21:59:29 2021
 import random
 import matplotlib.pyplot as plt
 
-ra = random.randint(0,5)
+ra = random.randint(0, 5)
 print(ra)
 
 list_ = [1, "a", 44, "b"]
@@ -24,6 +24,6 @@ ran = []
 for i in range(10000):
     c = random.gauss(100, 50)
     ran.append(c)
-    
-plt.hist(ran, bins = 200) 
+
+plt.hist(ran, bins=200)
 plt.show()

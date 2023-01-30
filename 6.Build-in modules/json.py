@@ -18,7 +18,7 @@ y = json.loads(x)
 print(y)
 print(type(y))
 # convert from python to json
-x = {"Tom":20, "Agelica":30, "Johan":24}
+x = {"Tom": 20, "Agelica": 30, "Johan": 24}
 
 y = json.dumps(x)
 
