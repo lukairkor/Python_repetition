@@ -7,13 +7,14 @@ Created on Mon Jan 16 11:55:26 2023
 """
 
 from collections import deque
+
 queue = deque()
 
 queue.append("a")
 queue.append("b")
 queue.append("c")
 queue.append("d")
-print(queue,"\n")
+print(queue, "\n")
 
 queue.popleft()
 queue.popleft()

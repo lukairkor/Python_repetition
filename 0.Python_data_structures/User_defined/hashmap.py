@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Fri Apr  1 23:49:26 2022
-- a little like dictionaries but faster
-- hash function compute a index value that store searched element
+Created on Fri Apr 1 23:49:26 2022
+- a little like dictionaries, but faster
+- hash function computes an index value that store searched element
 - are indexed data structure
 - SHA
 - non-linear
 @author: lukas
 """
 
-# keys  ->  hashing  ->  hash_table
+# keys -> hashing -> hash_table
 
 
 class HashMap:
@@ -33,8 +33,9 @@ class HashMap:
         """delete value"""
         del self.table[key]
 
-    def __hash_fun(self, key):
-        """privat hashing methode"""
+    @staticmethod
+    def __hash_fun(key):
+        """private hashing methode"""
         return hash(key)
 
     def show(self):

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Fri Apr  1 23:48:53 2022
-- non linear data structure
+Created on Fri Apr 1 23:48:53 2022
+- non-linear data structure
 - collection of vertices and edges
 - finding shorting path, networking
 @author: lukas
@@ -10,7 +10,7 @@ Created on Fri Apr  1 23:48:53 2022
 
 
 class Vertex:
-    """vertex templete"""
+    """vertex template"""
 
     def __init__(self, data):
         """vertex value and his two neighbours """
@@ -31,7 +31,7 @@ class Graph:
         self.vertices.append(new_verte)
 
     def add_edges(self, ver_1, ver_2):
-        """pair two vertex"""
+        """pair two vertexes"""
         ver_1_obj = next(
             (ver for ver in self.vertices if ver.data == ver_1), None)
         ver_2_obj = next(

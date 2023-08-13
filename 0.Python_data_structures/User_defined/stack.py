@@ -6,15 +6,16 @@ Created on Fri Apr  1 22:34:15 2022
 @author: lukas
 """
 
+
 class Stack:
     """Creating Stack"""
 
     def __init__(self):
-        """initialize empty list"""
+        """initialize an empty list"""
         self.items = []
 
     def push(self, item):
-        """add element at the end of the list"""
+        """add an element at the end of the list"""
         self.items.append(item)
 
     def pop(self):
@@ -25,12 +26,12 @@ class Stack:
             self.items.pop()
 
     def if_empty(self):
-        """check if list is empty"""
+        """check if a list is empty"""
         return len(self.items)
 
     def size(self):
-        """check size of the list"""
-        return print(f"list  lenght is equel to: {len(self.items)}")
+        """check the size of the list"""
+        return print(f"list  length is equal to: {len(self.items)}")
 
     def show(self):
         """show list content"""

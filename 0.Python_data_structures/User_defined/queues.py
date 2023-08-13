@@ -8,8 +8,9 @@ Created on Fri Apr  1 22:30:52 2022
 @author: lukas
 """
 
-## enqueue -> | | | | | | -> dequeue
-##       reaqr ^       ^ front
+
+# enqueue -> | | | | | | -> dequeue
+#       reaqr ^       ^ front
 
 
 class Queue:
@@ -23,14 +24,14 @@ class Queue:
         self.items.append(item)
 
     def dequeue(self):
-        """retrieve and remove element from end of the queue"""
+        """retrieve and remove an element from the end of the queue"""
         if self.if_empty() == 0:
             print("list is empty")
         else:
             self.items.pop()
 
     def if_empty(self):
-        """check if list is empty"""
+        """check if a list is empty"""
         return len(self.items)
 
     def show(self):
@@ -39,7 +40,7 @@ class Queue:
             print(item)
 
     def front(self):
-        """return first element from queue"""
+        """return a first element from queue"""
         print(f"First element: {self.items[0]}")
         return self.items[0]
 

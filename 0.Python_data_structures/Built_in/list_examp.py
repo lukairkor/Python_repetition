@@ -3,6 +3,8 @@
 """
 - primary operations on list
 """
+
+
 def unp_lis():
     """unpacked list"""
     a_1, b_2, c_3, d_4 = name_list
@@ -17,7 +19,7 @@ def rev_list():
 
 
 def pop_list():
-    """pop elem out of list"""
+    """pop elem out of a list"""
     new_list = name_list.copy()
     show = new_list.pop(0)
     print(show, "\n")
@@ -31,7 +33,7 @@ def ins_list():
 
 
 def coun_list():
-    """count amount of spec elemen"""
+    """count the amount of spec elemen"""
     new_list = name_list.copy()
     show = new_list.count("Ala")
     print(show, "\n")
@@ -40,7 +42,7 @@ def coun_list():
 def ext_list():
     """extending our list"""
     new_list = name_list.copy()
-    new_list.extend([1,2,3,4,5])
+    new_list.extend([1, 2, 3, 4, 5])
     print(new_list, "\n)")
 
 

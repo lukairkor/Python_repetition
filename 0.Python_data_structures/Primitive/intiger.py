@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Sat Apr  2 17:11:52 2022
-- intiger numb
+Created on Sat Apr 2 17:11:52 2022
+- integer numb
 @author: lukas
 """
 i = 5

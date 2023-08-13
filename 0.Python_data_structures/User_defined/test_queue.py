@@ -23,7 +23,7 @@ def test_enqueue():
 
 
 def test_dequeue():
-    """retrieve and remove element from end of the queue"""
+    """retrieve and remove an element from the end of the queue"""
     queue = Queue()
 
     queue.enqueue(1)
@@ -35,14 +35,14 @@ def test_dequeue():
 
 
 def test_if_empty():
-    """check if list is empty"""
+    """check if a list is empty"""
     queue = Queue()
     
     assert queue.if_empty() == 0
 
 
 def test_front():
-    """return first element from queue"""
+    """return a first element from queue"""
     queue = Queue()
 
     queue.enqueue(1)

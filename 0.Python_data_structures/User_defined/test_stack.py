@@ -11,7 +11,7 @@ from stack import Stack
 
 
 def test_push():
-    """add element at the end of the list"""
+    """add an element at the end of the list"""
     stack = Stack()
     
     stack.push(1)
@@ -34,7 +34,7 @@ def test_pop():
 
 
 def test_if_empty():
-    """check if list is empty"""
+    """check if a list is empty"""
     stack = Stack()
     
     assert stack.if_empty() == 0
@@ -43,12 +43,12 @@ def test_if_empty():
 
 
 def test_size():
-    """check size of the list"""
+    """check the size of the list"""
     stack = Stack()
     
-    stack.size() == "list  lenght is equel to: 0"
+    stack.size() == "list  length is equal to: 0"
     stack.push(1)
-    stack.size() == "list  lenght is equel to: 1"
+    stack.size() == "list  length is equal to: 1"
 
 
 def test_show():

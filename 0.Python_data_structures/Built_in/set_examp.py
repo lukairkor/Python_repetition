@@ -14,7 +14,7 @@ def typ_fun():
 
 def add_item():
     """adding items to sets"""
-    print("adding items to sets:","\n")
+    print("adding items to sets:", "\n")
     set_2 = set()
     set_2.add("zaba")
     print(set_2)
@@ -24,21 +24,21 @@ def add_item():
 
 
 def del_item():
-    """deleting from set"""
+    """deleting from a set"""
     set_2 = add_item()
-    print("deleting from set:","\n")
+    print("deleting from set:", "\n")
     # delete specific one
     set_2.remove("krowa")
     print(set_2)
     set_2.add("krowa")
     # delete last one
     pop_las = set_2.pop()
-    print(set_2, " removed: ", pop_las,"\n")
+    print(set_2, " removed: ", pop_las, "\n")
 
 
 def oper_set():
     """set operations"""
-    print("set operations:","\n")
+    print("set operations:", "\n")
     set1 = {1, 2, 3, 4}
     set2 = {1, 5, 6, 7, "b"}
     print(f"our first set: {set1}, our second set: {set2}\n")
@@ -53,7 +53,7 @@ def oper_set():
     print(set_difference, "set difference\n")
 
     set_difference = set1.symmetric_difference(set2)
-    print(set_difference, "symetric difference\n")
+    print(set_difference, "symmetric difference\n")
 
     print("boolean operation")
     print(1 in set1)
@@ -62,7 +62,7 @@ def oper_set():
 
 if __name__ == "__main__":
     set_org = {1, "a", 2, 2, 4}
-    print(set_org,"\n")
+    print(set_org, "\n")
     typ_fun()
     add_item()
     del_item()
