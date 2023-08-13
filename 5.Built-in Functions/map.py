@@ -2,7 +2,7 @@
 """
 - they facilitate functional programming
 - performing action on every item in iterable
-- more memory efficient then comprehension because 
+- more memory efficient than comprehension because
 do not store all values at once 
 """
 
@@ -15,7 +15,7 @@ def suma(skladnik):
 
 wynik_1 = map(suma, liczby)
 
-# convert to other colection
+# convert to other collection
 wynik = list(map(suma, liczby))
 
 # its iterable we can unpack it

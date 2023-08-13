@@ -6,7 +6,7 @@
 
 # fname = input("Enter file name: ")
 
-FNAME = ('romeo.txt')
+FNAME = 'romeo.txt'
 
 with open(FNAME, encoding='UTF-8') as file:
     file_read = file.read()

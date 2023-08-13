@@ -6,8 +6,9 @@ Created on Fri May 14 00:20:13 2021
 @author: lukas
 """
 
+
 def calcul_paym(hour, rate):
-    """calculculate employee wages"""
+    """calculate employee wages"""
     if hour.isnumeric() and rate.isnumeric():
 
         hour = float(hour)

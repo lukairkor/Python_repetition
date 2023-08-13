@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jul  1 18:26:23 2021
+Created on Thu Jul 1 18:26:23 2021
 
 @author: lukas
 """
@@ -18,7 +18,7 @@ class Punkt2D:
         self.distance = math.sqrt(val_x**2 + val_y**2)
 
     def __add__(self, sec_):
-        """self summing class"""
+        """self-summing class"""
         return Punkt2D(self.val_x + sec_.val_x, self.val_y + sec_.val_y)
 
     def __lt__(self, sec_):

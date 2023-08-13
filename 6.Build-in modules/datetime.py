@@ -8,10 +8,10 @@ Created on Thu Apr 22 22:50:45 2021
 from datetime import date, time, datetime
 
 x = date.today()
-print(x,"\n")
+print(x, "\n")
 
 x = time(12, 12, 12)
-print(x,"\n")
+print(x, "\n")
 
 x = datetime(2023, 12, 12, 12, 12, 12)
-print(x,"\n")
+print(x, "\n")

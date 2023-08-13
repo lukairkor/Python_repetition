@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jul  1 21:49:21 2021
+Created on Thu Jul 1 21:49:21 2021
 
 @author: lukas
 """
@@ -20,7 +20,8 @@ class Engine:
 
 
 class Aircraft(Engine):
-    def __init__(self, type_name, model_name): 
+    def __init__(self, type_name, model_name, engin_type, engin_power):
+        super().__init__(engin_type, engin_power)
         self.type_name = type_name
         self.model_name = model_name
 
@@ -38,16 +39,16 @@ class Glider(Aircraft):
 
     def describe_engin_glider(self):
         print("Have no engin")
-        super().describe_engin(0)  # acces function from previous class
+        super().describe_engin(0)  # access function from previous class
 
 
-class jet_aircraft(Aircraft):
+class JetAircraft(Aircraft):
     __amount_of_engines = 2
 
     def __init__(self, manufac):
         self.manufac = manufac
 
-    def describe_engin(self):
+    def describe_engin(self, **kwargs):
         super().describe_engin(self.__amount_of_engines)
 
     # usuful method in class, that we can call
@@ -71,8 +72,8 @@ if __name__ == "__main__":
     glider.name_of_aircraft()
 
     print("----------------")
-    # we can invoke method without creating object
-    jet1 = jet_aircraft.new_jet("General Dynamics")
+    # we can invoke method without creating an object
+    jet1 = JetAircraft.new_jet("General Dynamics")
     jet1.engin_type = "jet engin"
     jet1.engin_power = 1500
     jet1.describe_engin()
@@ -85,7 +86,7 @@ if __name__ == "__main__":
     jet2.describe_engin()
     jet2.wing_type("Delta")
     print("----------------")
-    # we dont need object just class for static method
+    # we don't need to object just class for static method
     jet2.wing_type("Eliptical")
 
 
@@ -102,4 +103,3 @@ if __name__ == "__main__":
 # ----------------
 # Jet wings type is Eliptical
 # =============================================================================
-

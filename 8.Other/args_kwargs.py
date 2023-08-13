@@ -4,6 +4,7 @@
 - *args and **kwargs are used in function definition:
 """
 
+
 def test(f_arg, *argv):
     """pass a variable number of non-keyword arguments"""
     print("first arg", f_arg)

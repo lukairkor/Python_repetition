@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-- counts the occurance of different houers and show this in console
+- counts the occurrence of different hours and show this in console
 """
 
 # if len(a) < 1 : a = "mbox-short.txt"
-FNAME = ('mbox-short.txt')
+FNAME = 'mbox-short.txt'
 
 counts = {}
 
@@ -17,7 +17,7 @@ with open(FNAME, encoding='UTF-8') as file:
         words = words[5:6]  # mamy godziny
         # words=str(words)
         words = words.pop()  # zwraca pierwszy element
-        #bez formy listy
+        # bez formy listy
         words = words.split(':')
         words = words[0:1]  # tworzy liste
         # words = words.pop() z tym zle

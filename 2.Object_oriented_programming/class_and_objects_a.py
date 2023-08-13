@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jul  1 14:07:51 2021
+Created on Thu Jul 1 14:07:51 2021
 
 @author: lukas
 """
@@ -18,7 +18,8 @@ class Engine:
 
 
 class Aircraft(Engine):
-    def __init__(self, type_name, model_name):  
+    def __init__(self, type_name, model_name, engin_type, engin_power):
+        super().__init__(engin_type, engin_power)
         self.type_name = type_name
         self.model_name = model_name
 
@@ -28,7 +29,8 @@ class Aircraft(Engine):
 
 
 class Glider(Aircraft):
-    def __init__(self, towing_type):
+    def __init__(self, towing_type, type_name, model_name, engin_type, engin_power):
+        super().__init__(type_name, model_name, engin_type, engin_power)
         self.towing_type = towing_type
 
     def __del__(self):
@@ -36,7 +38,7 @@ class Glider(Aircraft):
 
     def describe_engin_glider(self):
         print("Have no engin")
-        super().describe_engin()  # acces function from previous class
+        super().describe_engin()  # access function from previous class
 
 
 if __name__ == "__main__":

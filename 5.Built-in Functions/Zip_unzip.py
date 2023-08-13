@@ -15,7 +15,7 @@ x = zip(list_1, list_2, list_3)
 # for i, j, k in x:
 #     print(i, j, k)
 
-##########unzip
+# unzip
 print(x)
 unziped_object = zip(*x)
 print(unziped_object)
@@ -23,7 +23,7 @@ unziped_list = list(unziped_object)
 print(unziped_list)
 
 
-####### zip how use properly
+# ip how use properly
 lista_1 = [1, 2, 3, 4]
 lista_2 = ["Ala", "Ola", "Kasia", "Basia"]
 

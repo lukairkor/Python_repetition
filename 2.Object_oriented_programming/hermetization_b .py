@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jul  1 21:49:21 2021
+Created on Thu Jul 1 21:49:21 2021
 
 @author: lukas
 """
@@ -48,14 +48,14 @@ class Glider(Aircraft):
     def describe_engin_glider(self):
         """ """
         print("Have no engin")
-        super().describe_engin(0)  # acces function from previous class
+        super().describe_engin(0)  # access function from previous class
 
 
-class jet_aircraft(Aircraft):
+class JetAircraft(Aircraft):
     """ """
     __amount_of_engines = 2
 
-    def describe_engin(self):
+    def describe_engin(self, **kwargs):
         """ """
         super().describe_engin(self.__amount_of_engines)
 
@@ -70,7 +70,7 @@ if __name__ == "__main__":
     glider.describe_engin_glider()
     glider.name_of_aircraft()
 
-    jet = jet_aircraft("jet_aircraft", "F16")
+    jet = JetAircraft("jet_aircraft", "F16")
     jet.engin_type = "jet engin"
     jet.engin_power = 1000
     jet.describe_engin()

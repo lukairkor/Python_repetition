@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
--we can iterate over generators only once the
--they reduce necessary amount of memory
+-we can iterate over generators only once
+-they reduce the necessary amount of memory
 """
 
 
@@ -13,7 +13,7 @@ def generator_1():
 
 gen = generator_1()
 
-#example one: next()
+# example one: next()
 print(next(gen))
 print(next(gen))
 print(next(gen))

@@ -6,7 +6,7 @@ Created on Fri May 14 00:20:13 2021
 @author: lukas
 """
 
-### with None and True/False
+# with None and True/False
 VAL_1 = True
 VAL_2 = 12
 

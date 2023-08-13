@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-- find emails adress in text and there amount
+- find emails address in text and there amount
 """
 
 # fname = input("Enter file name: ")

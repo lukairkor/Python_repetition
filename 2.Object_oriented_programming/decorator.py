@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-'''
+"""
 -dekoratory w Pythonie opierają się przede wszystkim
 na dwóch założeniach:
 -funkcja może przyjąć jako argument inną funkcję
 -wewnątrz funkcji można stworzyć kolejną funkcję
 *dekorator to wzorzec
-'''
+"""
 
 from datetime import datetime
 
@@ -14,7 +14,8 @@ from datetime import datetime
 class Examp1:
     """without decorator"""
 
-    def say_something(self):
+    @staticmethod
+    def say_something():
         """print text"""
         print(f"Hello!! it is {datetime.now().hour}")
 

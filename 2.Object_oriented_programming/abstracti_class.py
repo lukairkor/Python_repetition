@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jul  1 18:26:23 2021
+Created on Thu Jul 1 18:26:23 2021
 
 @author: lukas
 """
@@ -12,7 +12,7 @@ from abc import ABC, abstractmethod
 class Myclass(ABC):
     """ """
 
-    @abstractmethod  # dekorator
+    @abstractmethod  # decorator
     def wylicz_objetosc(self):
         pass
 

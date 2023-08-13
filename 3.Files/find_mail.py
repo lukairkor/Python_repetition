@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-- getting mail adress
+- getting mail address
 """
 
 from pathlib import Path
 
 
-def get_email(filename, name):
-    """getting mail adress"""
+def get_email(name):
+    """getting mail address"""
     count = 0
     user = {}
     with open(FNAME, encoding='UTF-8') as file:
@@ -24,4 +24,4 @@ def get_email(filename, name):
 
 # if len(name) < 1 : name = "mbox-short.txt"
 FNAME = Path('mbox-short.txt')
-get_email(FNAME, 'cwen')
+get_email('cwen')

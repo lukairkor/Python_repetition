@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri May 14 00:20:13 2021
-- check smallest and biggest number in list
+- check the smallest and biggest number in list
 @author: lukas
 """
 
